@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leiliane Santos | Avaliação Neuropsicológica e TEA em Joinville</title>
+<meta name="description" content="Psicóloga e neuropsicóloga especialista em autismo (TEA) em Joinville. Avaliação neuropsicológica, ABA e TCC para infância, adolescência e adultos. Nota 4,9 no Google.">
+<meta name="theme-color" content="#1E2A4A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --tinta:#1E2A4A;
+  --tinta-2:#34426A;
+  --ceu:#CFE5F7;
+  --ceu-2:#9CC8EC;
+  --sol:#FFD66B;
+  --coral:#F28B6B;
+  --coral-2:#E0714F;
+  --menta:#C6EBD2;
+  --papel:#FFFBF3;
+  --branco:#FFFFFF;
+  --cinza:#56607A;
+  --linha:rgba(30,42,74,.12);
+  --display:'Bricolage Grotesque',system-ui,sans-serif;
+  --texto:'Atkinson Hyperlegible',system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--texto);background:var(--papel);color:var(--tinta);font-size:17px;line-height:1.6;overflow-x:hidden;padding-bottom:78px}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+.w{width:100%;max-width:1180px;margin:0 auto;padding:0 18px}
+h1,h2,h3{font-family:var(--display);line-height:1.04;letter-spacing:-.025em;font-weight:800}
+h1{font-size:clamp(2.35rem,10vw,4.6rem)}
+h2{font-size:clamp(1.95rem,7.5vw,3.3rem)}
+h3{font-size:1.3rem;font-weight:700;letter-spacing:-.01em}
+.tag{display:inline-block;font-family:var(--display);font-weight:700;font-size:.82rem;letter-spacing:.02em;padding:7px 14px;border-radius:999px;background:var(--branco);border:1.5px solid var(--tinta)}
+.sub{font-size:1.1rem;color:var(--cinza);max-width:560px}
+section{padding:72px 0}
+.marca{background:linear-gradient(transparent 60%,var(--sol) 60%);padding:0 .08em}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:16px;font-weight:700;font-size:1.02rem;border:2px solid var(--tinta);cursor:pointer;transition:transform .15s,box-shadow .15s;text-align:center}
+.btn svg{width:22px;height:22px;flex-shrink:0}
+.btn-a{background:var(--coral);color:var(--tinta);box-shadow:4px 4px 0 var(--tinta)}
+.btn-a:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--tinta)}
+.btn-a:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--tinta)}
+.btn-b{background:var(--branco);color:var(--tinta)}
+.btn-b:hover{background:var(--ceu)}
+
+/* topo */
+.faixa{background:var(--tinta);color:var(--papel);font-size:.88rem;text-align:center;padding:9px 14px}
+.faixa b{color:var(--sol)}
+header{position:sticky;top:0;z-index:40;background:var(--papel);border-bottom:1.5px solid var(--linha)}
+.nav{display:flex;justify-content:space-between;align-items:center;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;font-size:1.15rem;letter-spacing:-.02em;line-height:1}
+.logo small{display:block;font-family:var(--texto);font-weight:400;font-size:.74rem;letter-spacing:0;color:var(--cinza);margin-top:3px}
+.logo-ic{width:40px;height:40px;flex-shrink:0}
+.menu{display:none;gap:28px;font-weight:700;font-size:.95rem}
+.menu a:hover{color:var(--coral-2)}
+.nav-cta{display:none}
+
+/* hero */
+.hero{padding:34px 0 64px}
+.hero-g{display:grid;gap:36px}
+.hero h1{margin:18px 0 18px}
+.hero .sub{margin-bottom:26px}
+.hero-ctas{display:grid;gap:12px}
+.prova{display:flex;align-items:center;gap:12px;margin-top:24px;font-size:.95rem;color:var(--cinza)}
+.prova .n{font-family:var(--display);font-weight:800;font-size:1.9rem;color:var(--tinta);line-height:1}
+.est{display:flex;gap:2px;color:var(--coral-2)}
+.est svg{width:16px;height:16px}
+.mosaico{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:12px}
+.bloco{border-radius:26px;border:2px solid var(--tinta);position:relative;overflow:hidden}
+.b-foto{grid-row:span 2;background:var(--ceu);min-height:330px;display:flex;align-items:flex-end;justify-content:center}
+.b-foto .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--tinta-2);text-align:center;padding:16px}
+.b-foto .ph svg{width:54px;height:54px}
+.b-sol{background:var(--sol);padding:18px;display:flex;flex-direction:column;justify-content:space-between;min-height:158px}
+.b-sol b{font-family:var(--display);font-size:2.4rem;line-height:1}
+.b-sol span{font-size:.9rem;line-height:1.3}
+.b-menta{background:var(--menta);padding:18px;display:flex;flex-direction:column;justify-content:space-between;min-height:158px}
+.b-menta svg{width:34px;height:34px}
+.b-menta span{font-family:var(--display);font-weight:700;font-size:1.05rem;line-height:1.15}
+
+/* problema */
+.prob{background:var(--tinta);color:var(--papel);border-radius:34px 34px 0 0}
+.prob h2{color:var(--papel)}
+.prob .sub{color:rgba(255,251,243,.75)}
+.prob-g{display:grid;gap:30px}
+.aspas-grande{font-family:var(--display);font-size:1.45rem;font-weight:700;line-height:1.25;letter-spacing:-.01em;border-left:4px solid var(--sol);padding-left:18px}
+.prob-lista{display:grid;gap:12px}
+.prob-lista div{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,251,243,.14)}
+.prob-lista svg{width:24px;height:24px;color:var(--coral);flex-shrink:0;margin-top:2px}
+
+/* checklist */
+.check{background:var(--ceu)}
+.check-g{display:grid;gap:30px}
+.check-card{background:var(--branco);border:2px solid var(--tinta);border-radius:28px;padding:22px 18px;box-shadow:6px 6px 0 var(--tinta)}
+.sinais{display:grid;gap:10px}
+.sinal{display:flex;gap:12px;align-items:center;padding:14px;border-radius:16px;border:1.5px solid var(--linha);cursor:pointer;transition:.15s;user-select:none;font-size:1rem;line-height:1.35}
+.sinal input{position:absolute;opacity:0;pointer-events:none}
+.caixa{width:26px;height:26px;border-radius:8px;border:2px solid var(--tinta);flex-shrink:0;display:grid;place-items:center;background:var(--branco);transition:.15s}
+.caixa svg{width:16px;height:16px;color:var(--tinta);opacity:0;transform:scale(.6);transition:.15s}
+.sinal.on{background:var(--sol);border-color:var(--tinta)}
+.sinal.on .caixa svg{opacity:1;transform:none}
+.sinal:focus-within{outline:3px solid var(--coral);outline-offset:2px}
+.check-rodape{margin-top:18px;display:grid;gap:12px}
+.contador{font-family:var(--display);font-weight:700;font-size:1.05rem}
+.aviso-check{font-size:.86rem;color:var(--cinza);line-height:1.45}
+
+/* etapas */
+.etapas-lista{display:grid;gap:14px;margin-top:36px;counter-reset:e}
+.etapa{border:2px solid var(--tinta);border-radius:24px;padding:22px 20px;background:var(--branco);position:relative}
+.etapa:nth-child(1){background:var(--menta)}
+.etapa:nth-child(2){background:var(--branco)}
+.etapa:nth-child(3){background:var(--sol)}
+.etapa:nth-child(4){background:var(--coral)}
+.etapa-n{font-family:var(--display);font-weight:800;font-size:3rem;line-height:.9;letter-spacing:-.04em;margin-bottom:12px}
+.etapa p{margin-top:8px;font-size:.98rem}
+.preencher{display:inline-block;margin-top:12px;font-size:.82rem;font-weight:700;padding:5px 10px;border-radius:8px;border:1.5px dashed var(--tinta);background:rgba(255,255,255,.55)}
+
+/* recebe */
+.recebe{background:var(--branco)}
+.recebe-g{display:grid;gap:30px}
+.itens{display:grid;gap:12px}
+.item{display:flex;gap:16px;align-items:flex-start;padding:18px;border-radius:20px;background:var(--papel);border:1.5px solid var(--linha)}
+.item-ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;flex-shrink:0;border:2px solid var(--tinta)}
+.item-ic svg{width:24px;height:24px}
+.item p{color:var(--cinza);font-size:.97rem;margin-top:2px}
+
+/* acompanhamento */
+.acomp-g{display:grid;gap:14px;margin-top:34px}
+.ac{border-radius:26px;padding:26px 22px;border:2px solid var(--tinta)}
+.ac h3{font-size:1.7rem;margin-bottom:8px}
+.ac .sigla{font-family:var(--display);font-weight:800;font-size:.85rem;letter-spacing:.06em;display:inline-block;padding:4px 10px;border-radius:8px;background:var(--tinta);color:var(--papel);margin-bottom:14px}
+.publicos{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.publicos span{padding:10px 16px;border-radius:999px;background:var(--branco);border:2px solid var(--tinta);font-weight:700;font-size:.95rem}
+
+/* sobre */
+.sobre{background:var(--sol)}
+.sobre-g{display:grid;gap:30px;align-items:center}
+.sobre-foto{aspect-ratio:4/4.6;border-radius:30px;border:2px solid var(--tinta);background:var(--papel);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--tinta-2);box-shadow:8px 8px 0 var(--tinta);max-width:420px;width:100%;margin:0 auto}
+.sobre-foto svg{width:60px;height:60px}
+.sobre h2{margin:14px 0 16px}
+.sobre p{font-size:1.06rem;margin-bottom:14px}
+.apelido{display:inline-flex;align-items:center;gap:10px;margin:6px 0 22px;padding:12px 16px;background:var(--branco);border:2px solid var(--tinta);border-radius:16px;font-weight:700}
+.apelido svg{width:22px;height:22px;color:var(--coral-2)}
+.cred{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.cred span{font-size:.86rem;font-weight:700;padding:7px 12px;border-radius:10px;background:rgba(255,255,255,.6);border:1.5px solid var(--tinta)}
+
+/* depoimentos */
+.depo-topo{display:grid;gap:18px;margin-bottom:30px}
+.nota-box{display:inline-flex;align-items:center;gap:14px;padding:14px 18px;border:2px solid var(--tinta);border-radius:18px;background:var(--branco);justify-self:start}
+.nota-box b{font-family:var(--display);font-size:2.3rem;line-height:1}
+.nota-box small{display:block;color:var(--cinza);font-size:.86rem}
+.depos{display:grid;gap:14px}
+.dp{border-radius:26px;padding:24px 22px;border:2px solid var(--tinta);display:flex;flex-direction:column;gap:16px;background:var(--branco)}
+.dp:nth-child(2){background:var(--ceu)}
+.dp:nth-child(3){background:var(--menta)}
+.dp:nth-child(4){background:var(--papel)}
+.dp blockquote{font-family:var(--display);font-weight:700;font-size:1.22rem;line-height:1.28;letter-spacing:-.01em;flex:1}
+.dp cite{font-style:normal;font-size:.9rem;font-weight:700}
+.dp cite span{display:block;font-weight:400;color:var(--cinza);font-size:.82rem}
+.ver-mais{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:700;border-bottom:2px solid var(--coral);padding-bottom:2px}
+.ver-mais svg{width:16px;height:16px}
+
+/* clinica */
+.clinica{background:var(--tinta);color:var(--papel)}
+.clinica h2{color:var(--papel)}
+.clinica .sub{color:rgba(255,251,243,.75)}
+.clinica-g{display:grid;gap:28px}
+.servs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.serv{border-radius:20px;padding:18px 16px;color:var(--tinta);border:2px solid var(--papel)}
+.serv svg{width:30px;height:30px;margin-bottom:12px}
+.serv b{font-family:var(--display);font-size:1.05rem;line-height:1.15;display:block}
+.clinica .btn-b{background:transparent;color:var(--papel);border-color:var(--papel)}
+.clinica .btn-b:hover{background:rgba(255,255,255,.08)}
+
+/* local */
+.local-g{display:grid;gap:22px}
+.dados{display:grid;gap:12px;margin:24px 0}
+.dado{display:flex;gap:14px;align-items:flex-start;padding:16px;border-radius:18px;background:var(--branco);border:1.5px solid var(--linha)}
+.dado svg{width:24px;height:24px;flex-shrink:0;color:var(--coral-2);margin-top:2px}
+.dado b{display:block;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--cinza)}
+.dado .falta{font-style:italic;color:var(--coral-2)}
+.mapa{border-radius:26px;overflow:hidden;border:2px solid var(--tinta);min-height:300px;background:var(--ceu)}
+.mapa iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+
+/* final */
+.final{background:var(--coral);text-align:center;border-top:2px solid var(--tinta)}
+.final h2{max-width:760px;margin:0 auto 16px}
+.final .sub{color:var(--tinta);margin:0 auto 28px}
+.final .btn-a{background:var(--branco)}
+
+footer{background:var(--tinta);color:rgba(255,251,243,.75);padding:44px 0 30px;font-size:.92rem}
+.foot-g{display:grid;gap:26px}
+footer .logo{color:var(--papel)}
+footer .logo small{color:rgba(255,251,243,.55)}
+footer h4{font-family:var(--display);font-size:.95rem;color:var(--sol);margin-bottom:10px}
+footer ul{list-style:none;display:grid;gap:7px}
+footer a:hover{color:var(--papel)}
+.copy{margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,251,243,.12);font-size:.82rem;color:rgba(255,251,243,.5)}
+
+/* barra fixa mobile */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--papel);border-top:2px solid var(--tinta);display:flex;gap:10px}
+.barra .btn{flex:1;min-height:52px;box-shadow:none}
+.barra .btn-ic{flex:0 0 52px;padding:0}
+
+.rv{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media (min-width:640px){
+  .hero-ctas{grid-template-columns:auto auto;justify-content:start}
+  .etapas-lista{grid-template-columns:1fr 1fr}
+  .acomp-g{grid-template-columns:1fr 1fr}
+  .depos{grid-template-columns:1fr 1fr}
+  .servs{grid-template-columns:repeat(4,1fr)}
+}
+@media (min-width:980px){
+  body{padding-bottom:0}
+  .barra{display:none}
+  section{padding:104px 0}
+  .w{padding:0 32px}
+  .menu{display:flex}
+  .nav-cta{display:inline-flex;min-height:46px;padding:0 18px;font-size:.95rem;box-shadow:3px 3px 0 var(--tinta)}
+  .hero{padding:60px 0 100px}
+  .hero-g{grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+  .b-foto{min-height:440px}
+  .prob-g{grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+  .check-g{grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start}
+  .check-txt{position:sticky;top:110px}
+  .check-card{padding:32px}
+  .sinais{grid-template-columns:1fr 1fr}
+  .etapas-lista{grid-template-columns:repeat(4,1fr)}
+  .recebe-g{grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
+  .itens{grid-template-columns:1fr 1fr}
+  .sobre-g{grid-template-columns:.85fr 1.15fr;gap:70px}
+  .depo-topo{grid-template-columns:1fr auto;align-items:end}
+  .depos{grid-template-columns:repeat(4,1fr)}
+  .clinica-g{grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .servs{grid-template-columns:1fr 1fr}
+  .local-g{grid-template-columns:1fr 1.15fr;gap:56px;align-items:stretch}
+  .foot-g{grid-template-columns:1.5fr 1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="faixa">Avaliação neuropsicológica para <b>TEA</b> em Joinville. Agende pelo WhatsApp.</div>
+
+<header>
+  <div class="w nav">
+    <a href="#inicio" class="logo" aria-label="Leiliane Santos, início">
+      <svg class="logo-ic" viewBox="0 0 40 40" aria-hidden="true">
+        <rect x="1" y="1" width="38" height="38" rx="12" fill="#FFD66B" stroke="#1E2A4A" stroke-width="2"/>
+        <circle cx="15" cy="16" r="5" fill="#F28B6B"/>
+        <rect x="21" y="11" width="10" height="10" rx="3" fill="#9CC8EC"/>
+        <path d="M10 30c4-5 16-5 20 0" stroke="#1E2A4A" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span>Leiliane Santos<small>Psicóloga e Neuropsicóloga</small></span>
+    </a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#sinais">Sinais</a>
+      <a href="#avaliacao">Avaliação</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#familias">Famílias</a>
+      <a href="#local">Onde atendo</a>
+    </nav>
+    <a class="btn btn-a nav-cta js-wa" data-msg="Olá, Leiliane! Vim pelo site e gostaria de saber sobre a avaliação neuropsicológica." href="#">Agendar avaliação</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="w hero-g">
+    <div class="rv">
+      <span class="tag">Especialista em Autismo (TEA)</span>
+      <h1>A dúvida sobre o desenvolvimento do seu filho merece uma <span class="marca">resposta clara.</span></h1>
+      <p class="sub">Avaliação neuropsicológica, ABA e TCC em Joinville. Você sai sabendo o que está acontecendo e quais são os próximos passos para a criança, a família e a escola.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-a js-wa" data-msg="Olá, Leiliane! Vim pelo site e gostaria de agendar uma avaliação neuropsicológica." href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+          Agendar avaliação
+        </a>
+        <a class="btn btn-b" href="#sinais">Ver os sinais de atenção</a>
+      </div>
+      <div class="prova">
+        <span class="n">4,9</span>
+        <div>
+          <div class="est" aria-label="Nota 4,9 de 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9.9-5 4.8 1.2 6.9L12 17.6 5.9 21l1.2-6.9-5-4.8 6.9-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9.9-5 4.8 1.2 6.9L12 17.6 5.9 21l1.2-6.9-5-4.8 6.9-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9.9-5 4.8 1.2 6.9L12 17.6 5.9 21l1.2-6.9-5-4.8 6.9-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9.9-5 4.8 1.2 6.9L12 17.6 5.9 21l1.2-6.9-5-4.8 6.9-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9.9-5 4.8 1.2 6.9L12 17.6 5.9 21l1.2-6.9-5-4.8 6.9-.9z"/></svg>
+          </div>
+          43 avaliações de famílias no Google
+        </div>
+      </div>
+    </div>
+
+    <div class="mosaico rv">
+      <div class="bloco b-foto">
+        <div class="ph"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="24" cy="18" r="8"/><path d="M8 42c2-9 8-14 16-14s14 5 16 14"/></svg>Foto da Leiliane<br>no consultório</div>
+      </div>
+      <div class="bloco b-sol">
+        <b>43</b>
+        <span>famílias avaliaram o atendimento no Google</span>
+      </div>
+      <div class="bloco b-menta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24A2.5 2.5 0 0 0 14.5 2Z"/></svg>
+        <span>Avaliação, ABA e TCC no mesmo lugar</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section class="prob">
+  <div class="w prob-g">
+    <div class="rv">
+      <span class="tag" style="background:transparent;color:var(--papel);border-color:var(--papel)">Se você está aqui</span>
+      <h2 style="margin:16px 0 18px">Talvez algo no seu filho tenha chamado a sua atenção.</h2>
+      <p class="aspas-grande">Nem sempre a criança precisa dizer "eu não estou bem" para mostrar que algo merece atenção.</p>
+    </div>
+    <div class="prob-lista rv">
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><span>A escola comentou algo e você não sabe se é fase ou se é preciso investigar.</span></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><span>Cada pessoa da família tem uma opinião diferente, e a dúvida só aumenta.</span></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><span>Você pesquisa à noite, lê listas de sinais e fica sem saber por onde começar.</span></div>
+      <p class="sub" style="margin-top:8px">Esperar costuma aumentar a angústia. Uma avaliação bem feita troca o "será?" por um caminho.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CHECKLIST -->
+<section class="check" id="sinais">
+  <div class="w check-g">
+    <div class="check-txt rv">
+      <span class="tag">Sinais de atenção</span>
+      <h2 style="margin:16px 0 16px">O que você já percebeu?</h2>
+      <p class="sub" style="color:var(--tinta-2)">Marque o que tem notado no dia a dia. Ao tocar no botão, a lista vai junto na mensagem para a Leiliane, e você não precisa explicar tudo do zero.</p>
+    </div>
+    <div class="check-card rv">
+      <div class="sinais" id="listaSinais">
+        <label class="sinal"><input type="checkbox" value="Atraso ou diferença na fala"><span class="caixa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>Atraso ou diferença na fala</label>
+        <label class="sinal"><input type="checkbox" value="Pouco contato visual"><span class="caixa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>Pouco contato visual</label>
+        <label class="sinal"><input type="checkbox" value="Não atende quando chamado pelo nome"><span class="caixa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>Não atende quando chamado pelo nome</label>
+        <label class="sinal"><input type="checkbox" value="Brincadeiras ou movimentos repetitivos"><span class="caixa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>Brincadeiras ou movimentos repetitivos</label>
+        <label class="sinal"><input type="checkbox" value="Sensibilidade a sons, texturas ou luzes"><span class="caixa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>Sensibilidade a sons, texturas ou luzes</label>
+        <label class="sinal"><input type="checkbox" value="Muita dificuldade com mudanças na rotina"><span class="caixa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>Muita dificuldade com mudanças na rotina</label>
+        <label class="sinal"><input type="checkbox" value="Dificuldade para brincar com outras crianças"><span class="caixa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>Dificuldade para brincar com outras crianças</label>
+        <label class="sinal"><input type="checkbox" value="Mudanças de comportamento ou dificuldades na escola"><span class="caixa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg></span>Mudanças de comportamento ou na escola</label>
+      </div>
+      <div class="check-rodape">
+        <span class="contador" id="contador">Nenhum sinal marcado ainda</span>
+        <a class="btn btn-a" id="btnSinais" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+          Conversar sobre o que notei
+        </a>
+        <p class="aviso-check">Esta lista não é um diagnóstico. Ela só ajuda a organizar o que você observou. Quem confirma ou descarta o TEA é uma avaliação profissional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ETAPAS -->
+<section id="avaliacao">
+  <div class="w">
+    <div class="rv">
+      <span class="tag">Avaliação neuropsicológica</span>
+      <h2 style="margin:16px 0 14px;max-width:760px">Como funciona, do primeiro contato até a devolutiva.</h2>
+      <p class="sub">Um processo com começo, meio e fim, em que a família participa de cada etapa.</p>
+    </div>
+    <div class="etapas-lista">
+      <div class="etapa rv">
+        <div class="etapa-n">01</div>
+        <h3>Conversa com os pais</h3>
+        <p>Vocês contam a história da criança, a rotina e o que motivou a busca.</p>
+      </div>
+      <div class="etapa rv">
+        <div class="etapa-n">02</div>
+        <h3>Sessões com a criança</h3>
+        <p>Observação, brincadeiras e testes padronizados, no ritmo dela.</p>
+        <span class="preencher">Número de sessões a preencher</span>
+      </div>
+      <div class="etapa rv">
+        <div class="etapa-n">03</div>
+        <h3>Análise dos resultados</h3>
+        <p>Os dados são cruzados com o que a família e a escola relatam.</p>
+      </div>
+      <div class="etapa rv">
+        <div class="etapa-n">04</div>
+        <h3>Devolutiva</h3>
+        <p>Um encontro para explicar o resultado com calma e tirar todas as dúvidas.</p>
+        <span class="preencher">Prazo de entrega a preencher</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE RECEBE -->
+<section class="recebe">
+  <div class="w recebe-g">
+    <div class="rv">
+      <span class="tag">Ao final</span>
+      <h2 style="margin:16px 0 14px">O que a família leva para casa.</h2>
+      <p class="sub">Mais do que um papel: um mapa de como apoiar a criança a partir de agora.</p>
+    </div>
+    <div class="itens">
+      <div class="item rv">
+        <div class="item-ic" style="background:var(--ceu)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></div>
+        <div><h3>Relatório da avaliação</h3><p>Documento com o que foi investigado e o que foi encontrado.</p></div>
+      </div>
+      <div class="item rv">
+        <div class="item-ic" style="background:var(--sol)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <div><h3>Devolutiva explicada</h3><p>Em linguagem simples, sem termos técnicos soltos.</p></div>
+      </div>
+      <div class="item rv">
+        <div class="item-ic" style="background:var(--menta)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 4l9 6.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg></div>
+        <div><h3>Orientações para casa e escola</h3><p>O que ajuda no dia a dia da criança e na sala de aula.</p></div>
+      </div>
+      <div class="item rv">
+        <div class="item-ic" style="background:var(--coral)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+        <div><h3>Próximos passos</h3><p>Indicação das terapias e encaminhamentos que fazem sentido.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACOMPANHAMENTO -->
+<section>
+  <div class="w">
+    <div class="rv">
+      <span class="tag">Depois da avaliação</span>
+      <h2 style="margin:16px 0 14px;max-width:760px">O cuidado continua com terapias baseadas em evidência.</h2>
+    </div>
+    <div class="acomp-g">
+      <div class="ac rv" style="background:var(--ceu)">
+        <span class="sigla">ABA</span>
+        <h3>Análise do Comportamento Aplicada</h3>
+        <p>Intervenção estruturada para desenvolver comunicação, autonomia e habilidades sociais, com metas acompanhadas de perto.</p>
+      </div>
+      <div class="ac rv" style="background:var(--menta)">
+        <span class="sigla">TCC</span>
+        <h3>Terapia Cognitivo-Comportamental</h3>
+        <p>Ajuda a entender e lidar com emoções, pensamentos e comportamentos, adaptada à idade de cada paciente.</p>
+      </div>
+    </div>
+    <div class="publicos rv"><span>Infância</span><span>Adolescência</span><span>Adultos</span></div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
+  <div class="w sobre-g">
+    <div class="sobre-foto rv">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="24" cy="18" r="8"/><path d="M8 42c2-9 8-14 16-14s14 5 16 14"/></svg>
+      Foto da Leiliane
+    </div>
+    <div class="rv">
+      <span class="tag">Quem vai atender</span>
+      <h2>Leiliane Santos</h2>
+      <div class="apelido">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+        Para as crianças, a "tia Leili"
+      </div>
+      <p>Psicóloga e neuropsicóloga, especialista em Autismo (TEA). Atende crianças, adolescentes e adultos com avaliação neuropsicológica, ABA e TCC.</p>
+      <p>As famílias que passaram por aqui descrevem terapias personalizadas e criativas, e um cuidado que inclui os pais no processo.</p>
+      <div class="cred">
+        <span>Psicóloga</span><span>Neuropsicóloga</span><span>Especialista em TEA</span><span style="border-style:dashed">CRP a preencher</span>
+      </div>
+      <a class="btn btn-a js-wa" data-msg="Olá, Leiliane! Vim pelo site e gostaria de conversar sobre um atendimento." href="#">Falar com a Leiliane</a>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="familias">
+  <div class="w">
+    <div class="depo-topo rv">
+      <div>
+        <span class="tag">Famílias</span>
+        <h2 style="margin-top:16px">O que os pais contam no Google.</h2>
+      </div>
+      <div class="nota-box">
+        <b>4,9</b>
+        <div>
+          <div class="est"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9.9-5 4.8 1.2 6.9L12 17.6 5.9 21l1.2-6.9-5-4.8 6.9-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9.9-5 4.8 1.2 6.9L12 17.6 5.9 21l1.2-6.9-5-4.8 6.9-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9.9-5 4.8 1.2 6.9L12 17.6 5.9 21l1.2-6.9-5-4.8 6.9-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9.9-5 4.8 1.2 6.9L12 17.6 5.9 21l1.2-6.9-5-4.8 6.9-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.3 6.9.9-5 4.8 1.2 6.9L12 17.6 5.9 21l1.2-6.9-5-4.8 6.9-.9z"/></svg></div>
+          <small>43 avaliações no Google</small>
+        </div>
+      </div>
+    </div>
+    <div class="depos">
+      <figure class="dp rv">
+        <blockquote>"Suas terapias são muito personalizadas e criativas. Minha filhota ama."</blockquote>
+        <cite>Milena Araujo<span>Avaliação no Google</span></cite>
+      </figure>
+      <figure class="dp rv">
+        <blockquote>"Desde o primeiro atendimento, meu filho gostou muito dela."</blockquote>
+        <cite>Regiane Costa<span>Avaliação no Google</span></cite>
+      </figure>
+      <figure class="dp rv">
+        <blockquote>"Extremamente dedicada, ética e comprometida com tudo o que faz."</blockquote>
+        <cite>Carlos Eduardo<span>Avaliação no Google</span></cite>
+      </figure>
+      <figure class="dp rv">
+        <blockquote>"Amo a maneira como a tia Leili atende meu filho com muita dedicação."</blockquote>
+        <cite>Família atendida<span>Destaque das avaliações no Google</span></cite>
+      </figure>
+    </div>
+    <a class="ver-mais" href="https://www.google.com/maps/search/?api=1&query=Psic%C3%B3loga%20Infantil%20Leiliane%20Santos&query_place_id=ChIJbSZwamyv3pQRRe-cZw5tn2o" target="_blank" rel="noopener">Ler as 43 avaliações
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- CLINICA -->
+<section class="clinica">
+  <div class="w clinica-g">
+    <div class="rv">
+      <span class="tag" style="background:transparent;color:var(--papel);border-color:var(--papel)">Onde atendo</span>
+      <h2 style="margin:16px 0 14px">Clínica Imaginar, desenvolvimento infantil.</h2>
+      <p class="sub">A Leiliane atende na Clínica de Desenvolvimento Infantil Imaginar, no Santo Antônio, que reúne atendimento psicológico, fonoaudiológico e avaliação no mesmo endereço.</p>
+      <a class="btn btn-b" style="margin-top:24px" href="https://www.instagram.com/clinicaimaginarsc/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        @clinicaimaginarsc
+      </a>
+    </div>
+    <div class="servs rv">
+      <div class="serv" style="background:var(--sol)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21.2l8.8-8.8a5.5 5.5 0 0 0 0-7.8Z"/></svg><b>Atendimento psicológico</b></div>
+      <div class="serv" style="background:var(--ceu)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4"/></svg><b>Atendimento fonoaudiológico</b></div>
+      <div class="serv" style="background:var(--menta)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><b>Avaliações</b></div>
+      <div class="serv" style="background:var(--coral)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><b>Santo Antônio, Joinville</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL -->
+<section id="local">
+  <div class="w local-g">
+    <div class="rv">
+      <span class="tag">Como chegar</span>
+      <h2 style="margin-top:16px">Venha conhecer o espaço.</h2>
+      <div class="dados">
+        <div class="dado"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Endereço</b>R. Guilherme Kock, 622, Santo Antônio, Joinville/SC, 89218-220</div></div>
+        <div class="dado"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Horários</b><span class="falta">Horários de atendimento a preencher</span></div></div>
+        <div class="dado"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><b>WhatsApp</b>(47) 99107-7724</div></div>
+      </div>
+      <a class="btn btn-b" href="https://www.google.com/maps/search/?api=1&query=Psic%C3%B3loga%20Infantil%20Leiliane%20Santos&query_place_id=ChIJbSZwamyv3pQRRe-cZw5tn2o" target="_blank" rel="noopener">Abrir no Google Maps</a>
+    </div>
+    <div class="mapa rv">
+      <iframe title="Mapa do consultório" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=R.+Guilherme+Kock,+622,+Santo+Ant%C3%B4nio,+Joinville+-+SC,+89218-220&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="w rv">
+    <h2>Trocar o "será?" por um plano começa com uma mensagem.</h2>
+    <p class="sub">Conte o que você tem observado. A Leiliane responde e explica como seria a avaliação para o seu filho.</p>
+    <a class="btn btn-a js-wa" data-msg="Olá, Leiliane! Vim pelo site e gostaria de agendar uma avaliação para meu filho." href="#">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+      Agendar pelo WhatsApp
+    </a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="w">
+    <div class="foot-g">
+      <div>
+        <span class="logo"><span>Leiliane Santos<small>Psicóloga e Neuropsicóloga | Especialista em TEA</small></span></span>
+        <p style="margin-top:14px;max-width:320px">Avaliação neuropsicológica, ABA e TCC para infância, adolescência e adultos em Joinville.</p>
+      </div>
+      <div>
+        <h4>Navegue</h4>
+        <ul><li><a href="#sinais">Sinais de atenção</a></li><li><a href="#avaliacao">Avaliação</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#local">Onde atendo</a></li></ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="#" class="js-wa" data-msg="Olá, Leiliane! Vim pelo site.">(47) 99107-7724</a></li>
+          <li><a href="https://www.instagram.com/leiliane.psi/" target="_blank" rel="noopener">@leiliane.psi</a></li>
+          <li>R. Guilherme Kock, 622, Santo Antônio, Joinville/SC</li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">Leiliane Santos, Psicóloga e Neuropsicóloga. Joinville, Santa Catarina.</p>
+  </div>
+</footer>
+
+<div class="barra">
+  <a class="btn btn-a js-wa" data-msg="Olá, Leiliane! Vim pelo site e gostaria de agendar uma avaliação." href="#">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+    Agendar avaliação
+  </a>
+  <a class="btn btn-b btn-ic" href="#sinais" aria-label="Ver sinais de atenção">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+  </a>
+</div>
+
+<script>
+(function(){
+  var NUM = '5547991077724';
+  function wa(msg){ return 'https://wa.me/' + NUM + '?text=' + encodeURIComponent(msg); }
+
+  document.querySelectorAll('.js-wa').forEach(function(a){
+    a.href = wa(a.getAttribute('data-msg') || 'Olá, Leiliane! Vim pelo site.');
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+
+  var boxes = document.querySelectorAll('#listaSinais input');
+  var contador = document.getElementById('contador');
+  var btn = document.getElementById('btnSinais');
+  function atualiza(){
+    var marcados = [];
+    boxes.forEach(function(b){
+      b.parentNode.classList.toggle('on', b.checked);
+      if (b.checked) marcados.push(b.value);
+    });
+    var n = marcados.length;
+    contador.textContent = n === 0 ? 'Nenhum sinal marcado ainda' : (n === 1 ? '1 sinal marcado' : n + ' sinais marcados');
+    var msg = 'Olá, Leiliane! Vim pelo site e gostaria de conversar sobre uma avaliação.';
+    if (n) msg += '\n\nTenho percebido:\n- ' + marcados.join('\n- ');
+    btn.href = wa(msg);
+  }
+  boxes.forEach(function(b){ b.addEventListener('change', atualiza); });
+  atualiza();
+
+  var els = document.querySelectorAll('.rv');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
+    }, { threshold: .1, rootMargin: '0px 0px -30px 0px' });
+    els.forEach(function(el){ io.observe(el); });
+  } else {
+    els.forEach(function(el){ el.classList.add('on'); });
+  }
+})();
+</script>
+</body>
+</html>
